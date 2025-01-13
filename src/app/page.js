@@ -47,7 +47,13 @@ export default function Home() {
                     {app.downloadNowText}
                   </h2>
                   <div className="w-screen mt-4 flex sm:flex-row justify-center lg:justify-start gap-6">
-                    <button className="w-fit h-auto">
+                    <button
+                      className="w-fit h-auto"
+                      data-value={app.googlePlayLink}
+                      data-fb-event="Google Play Button Click"
+                      data-fb-content-name="Google Play Button"
+                      data-fb-value={app.googlePlayLink}
+                    >
                       <Link href={app.googlePlayLink} target="_blank">
                         <Image
                           src="/google-play-badge.webp"

@@ -23,7 +23,11 @@ function FooterSection() {
             </Link>
             <ul className="flex gap-4">
               <li>
-                <button>
+                <button
+                  className="w-fit h-auto"
+                  data-fb-content-name="Facebook Link"
+                  data-fb-value={app.facebookLink}
+                >
                   <Link href={app.facebookLink} target="_blank">
                     <FacebookIcon />
                   </Link>
