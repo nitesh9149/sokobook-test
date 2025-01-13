@@ -61,10 +61,6 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '1124491962704016');
 fbq('track', 'PageView');
-fbq('track', 'googlePlayLink');
-fbq('track', 'facebookLink');
-fbq('track', 'instagramLink');
-fbq('track', 'tiktokLink');
 `,
           }}
         />

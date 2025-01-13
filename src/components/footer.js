@@ -23,12 +23,12 @@ function FooterSection() {
             </Link>
             <ul className="flex gap-4">
               <li>
-                <button id="facebookLink">
-                  <Link href={app.facebookLink} target="_blank">
+                <Link href={app.facebookLink} target="_blank">
+                  <button id="facebookLink">
                     <FacebookIcon />
-                  </Link>
-                  <span className="sr-only">Footer Facebook Link</span>
-                </button>
+                    <span className="sr-only">Footer Facebook Link</span>
+                  </button>
+                </Link>
               </li>
               <li>
                 <button id="instagramLink">
