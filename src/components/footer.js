@@ -25,21 +25,25 @@ function FooterSection() {
               <li>
                 <Link href={app.facebookLink} target="_blank">
                   <FacebookIcon />
+                  <span className="sr-only">Footer Facebook Link</span>
                 </Link>
               </li>
               <li>
                 <Link href={app.instagramLink} target="_blank">
                   <InstagramIcon />
+                  <span className="sr-only">Footer Instagram Link</span>
                 </Link>
               </li>
               <li>
                 <Link href={app.tiktokLink} target="_blank">
                   <TiktokIcon />
+                  <span className="sr-only">Footer TikTok Link</span>
                 </Link>
               </li>
               <li>
                 <Link href={app.youtubeLink} target="_blank">
                   <YoutubeIcon />
+                  <span className="sr-only">Footer Youtube Link</span>
                 </Link>
               </li>
             </ul>
