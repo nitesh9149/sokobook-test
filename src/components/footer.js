@@ -23,11 +23,7 @@ function FooterSection() {
             </Link>
             <ul className="flex gap-4">
               <li>
-                <button
-                  className="w-fit h-auto"
-                  data-fb-content-name="Facebook Link"
-                  data-fb-value={app.facebookLink}
-                >
+                <button id="facebookLink">
                   <Link href={app.facebookLink} target="_blank">
                     <FacebookIcon />
                   </Link>
@@ -35,7 +31,7 @@ function FooterSection() {
                 </button>
               </li>
               <li>
-                <button>
+                <button id="instagramLink">
                   <Link href={app.instagramLink} target="_blank">
                     <InstagramIcon />
                   </Link>
@@ -43,7 +39,7 @@ function FooterSection() {
                 </button>
               </li>
               <li>
-                <button>
+                <button id="tiktokLink">
                   <Link href={app.tiktokLink} target="_blank">
                     <TiktokIcon />
                   </Link>
@@ -52,7 +48,7 @@ function FooterSection() {
               </li>
               <li>
                 <button>
-                  <Link href={app.youtubeLink} target="_blank">
+                  <Link id="youtubeLink" href={app.youtubeLink} target="_blank">
                     <YoutubeIcon />
                   </Link>
                   <span className="sr-only">Footer Youtube Link</span>
