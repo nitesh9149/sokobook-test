@@ -224,6 +224,6 @@ const pageData = {
   },
 };
 
-const app = pageData[process.env.NEXT_PUBLIC_APP_CONFIGURATION];
+const app = pageData["sokobook"];
 
 export default app;
