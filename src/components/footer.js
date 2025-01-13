@@ -23,28 +23,36 @@ function FooterSection() {
             </Link>
             <ul className="flex gap-4">
               <li>
-                <Link href={app.facebookLink} target="_blank">
-                  <FacebookIcon />
+                <button>
+                  <Link href={app.facebookLink} target="_blank">
+                    <FacebookIcon />
+                  </Link>
                   <span className="sr-only">Footer Facebook Link</span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href={app.instagramLink} target="_blank">
-                  <InstagramIcon />
+                <button>
+                  <Link href={app.instagramLink} target="_blank">
+                    <InstagramIcon />
+                  </Link>
                   <span className="sr-only">Footer Instagram Link</span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href={app.tiktokLink} target="_blank">
-                  <TiktokIcon />
+                <button>
+                  <Link href={app.tiktokLink} target="_blank">
+                    <TiktokIcon />
+                  </Link>
                   <span className="sr-only">Footer TikTok Link</span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href={app.youtubeLink} target="_blank">
-                  <YoutubeIcon />
+                <button>
+                  <Link href={app.youtubeLink} target="_blank">
+                    <YoutubeIcon />
+                  </Link>
                   <span className="sr-only">Footer Youtube Link</span>
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
