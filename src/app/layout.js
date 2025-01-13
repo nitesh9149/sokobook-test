@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
     <html lang={app.lang}>
       <head>
         <link rel="icon" href="/icon.png" type="image/png" sizes="any" />
-        <Script
+        <script
           id="fb-pixel"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -64,11 +64,6 @@ fbq('track', 'PageView');
 `,
           }}
         />
-      </head>
-      <body className={inter.className}>
-        <Navbar />
-        {children}
-        <FooterSection />
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<img
@@ -80,6 +75,11 @@ fbq('track', 'PageView');
       />`,
           }}
         />
+      </head>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+        <FooterSection />
       </body>
     </html>
   );
