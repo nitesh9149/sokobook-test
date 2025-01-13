@@ -48,7 +48,12 @@ export default function Home() {
                   </h2>
                   <div className="w-screen mt-4 flex sm:flex-row justify-center lg:justify-start gap-6">
                     <button className="w-fit h-auto">
-                      <Link href={app.googlePlayLink} target="_blank">
+                      <Link
+                        href={app.googlePlayLink}
+                        target="_blank"
+                        name="Google Play Link"
+                        title="Link to Google Play Store"
+                      >
                         <Image
                           src="/google-play-badge.webp"
                           alt="Google play badge"
