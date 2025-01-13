@@ -47,8 +47,8 @@ export default function Home() {
                     {app.downloadNowText}
                   </h2>
                   <div className="w-screen mt-4 flex sm:flex-row justify-center lg:justify-start gap-6">
-                    <Link href={app.googlePlayLink} target="_blank">
-                      <button className="w-fit h-auto">
+                    <button className="w-fit h-auto">
+                      <Link href={app.googlePlayLink} target="_blank">
                         <Image
                           src="/google-play-badge.webp"
                           alt="Google play badge"
@@ -56,8 +56,9 @@ export default function Home() {
                           width={150}
                           height={100}
                         />
-                      </button>
-                    </Link>
+                      </Link>
+                    </button>
+
                     {/* <Link href={app.appStoreLink} target="_blank">
                       <Image
                         src="/app-store-badge.png"
