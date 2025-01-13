@@ -7,6 +7,7 @@ import Image from "next/image";
 import HeroImageMotion from "@/components/motion/hero-image-motion";
 import FAQSection from "@/components/faq-section";
 import app from "@/config";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -46,15 +47,17 @@ export default function Home() {
                     {app.downloadNowText}
                   </h2>
                   <div className="w-screen mt-4 flex sm:flex-row justify-center lg:justify-start gap-6">
-                    <a className="w-fit h-auto" href={app.googlePlayLink} target="_blank">
-                      <Image
-                        src="/google-play-badge.webp"
-                        alt="Google play badge"
-                        className="object-contain"
-                        width={150}
-                        height={100}
-                      />
-                    </a>
+                    <Link href={app.googlePlayLink} target="_blank">
+                      <button className="w-fit h-auto">
+                        <Image
+                          src="/google-play-badge.webp"
+                          alt="Google play badge"
+                          className="object-contain"
+                          width={150}
+                          height={100}
+                        />
+                      </button>
+                    </Link>
                     {/* <Link href={app.appStoreLink} target="_blank">
                       <Image
                         src="/app-store-badge.png"
