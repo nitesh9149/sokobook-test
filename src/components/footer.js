@@ -29,8 +29,13 @@ function FooterSection() {
                   name="Facebook Link"
                   title="Link to Facebook Page"
                 >
-                  <button id="facebookLink" type="button">
-                    <FacebookIcon />
+                  <button>
+                    <Image
+                      width={24}
+                      height={24}
+                      src="/facebook.png"
+                      alt="faceboook link"
+                    />
                     <span className="sr-only">Footer Facebook Link</span>
                   </button>
                 </Link>
