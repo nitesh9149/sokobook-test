@@ -64,6 +64,11 @@ fbq('track', 'PageView');
 `,
           }}
         />
+      </head>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+        <FooterSection />
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<img
@@ -75,11 +80,6 @@ fbq('track', 'PageView');
       />`,
           }}
         />
-      </head>
-      <body className={inter.className}>
-        <Navbar />
-        {children}
-        <FooterSection />
       </body>
     </html>
   );
