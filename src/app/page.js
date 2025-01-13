@@ -57,6 +57,7 @@ export default function Home() {
                           height={100}
                         />
                       </Link>
+                      <span className="sr-only">Google Play Button</span>
                     </button>
 
                     {/* <Link href={app.appStoreLink} target="_blank">
