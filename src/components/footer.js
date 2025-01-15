@@ -23,12 +23,7 @@ function FooterSection() {
             </Link>
             <ul className="flex gap-4">
               <li>
-                <Link
-                  href={app.facebookLink}
-                  target="_blank"
-                  name="Facebook Link"
-                  title="Link to Facebook Page"
-                >
+                <Link href={app.facebookLink} target="_blank">
                   <button>
                     <Image
                       width={24}
@@ -41,33 +36,44 @@ function FooterSection() {
                 </Link>
               </li>
               <li>
-                <button id="instagramLink" type="button">
-                  <Link
-                    href={app.instagramLink}
-                    target="_blank"
-                    name="Instagram Link"
-                    title="Link to Instagram Page"
-                  >
-                    <InstagramIcon />
-                  </Link>
-                  <span className="sr-only">Footer Instagram Link</span>
-                </button>
+                <Link href={app.instagramLink} target="_blank">
+                  <button>
+                    <Image
+                      width={24}
+                      height={24}
+                      src="/instagram.png"
+                      alt="instagram link"
+                    />
+                    <span className="sr-only">Footer Instagram Link</span>
+                  </button>
+                </Link>
               </li>
               <li>
-                <button id="tiktokLink">
-                  <Link href={app.tiktokLink} target="_blank">
-                    <TiktokIcon />
-                  </Link>
-                  <span className="sr-only">Footer TikTok Link</span>
-                </button>
+                <Link href={app.tiktokLink} target="_blank">
+                  <button>
+                    <Image
+                      width={24}
+                      height={24}
+                      className="object-contain h-[24px]"
+                      src="/tiktok.png"
+                      alt="tiktok link"
+                    />
+                    <span className="sr-only">Footer Tiktok Link</span>
+                  </button>
+                </Link>
               </li>
               <li>
-                <button>
-                  <Link id="youtubeLink" href={app.youtubeLink} target="_blank">
-                    <YoutubeIcon />
-                  </Link>
-                  <span className="sr-only">Footer Youtube Link</span>
-                </button>
+                <Link href={app.youtubeLink} target="_blank">
+                  <button>
+                    <Image
+                      width={24}
+                      height={24}
+                      src="/youtube.png"
+                      alt="youtube link"
+                    />
+                    <span className="sr-only">Footer Youtube Link</span>
+                  </button>
+                </Link>
               </li>
             </ul>
           </div>
