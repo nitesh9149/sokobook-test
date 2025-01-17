@@ -47,7 +47,7 @@ export default function Home() {
                     {app.downloadNowText}
                   </h2>
                   <div className="w-screen mt-4 flex sm:flex-row justify-center lg:justify-start gap-6">
-                    <button className="w-fit h-auto">
+                    <button id="googlePlayLink" className="w-fit h-auto">
                       <Link
                         href={app.googlePlayLink}
                         target="_blank"
