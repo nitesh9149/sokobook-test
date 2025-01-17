@@ -5,7 +5,10 @@ import Link from "next/link";
 
 function FbpixelButton() {
   function handleClick() {
-    fbq("track", "googlePlayLink");
+    fbq("track", "googlePlayLink", {
+      content_name: "Really Fast Running Shoes",
+      value: app.googlePlayLink,
+    });
   }
   return (
     <button onClick={handleClick} id="googlePlayLink" className="w-fit h-auto">
