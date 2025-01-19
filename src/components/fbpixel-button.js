@@ -1,6 +1,6 @@
 "use client";
 
-function FbpixelButton({ children, contentName, value, id }) {
+function FbPixelButton({ children, contentName, value, id }) {
   function handleClick() {
     fbq("track", id, {
       content_name: contentName,
@@ -15,4 +15,4 @@ function FbpixelButton({ children, contentName, value, id }) {
   );
 }
 
-export { FbpixelButton };
+export { FbPixelButton };

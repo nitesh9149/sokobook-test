@@ -8,7 +8,7 @@ import HeroImageMotion from "@/components/motion/hero-image-motion";
 import FAQSection from "@/components/faq-section";
 import app from "@/config";
 import Link from "next/link";
-import { FbpixelButton } from "@/components/fbpixel-button";
+import { FbPixelButton } from "@/components/fbpixel-button";
 
 export default function Home() {
   return (
@@ -48,7 +48,7 @@ export default function Home() {
                     {app.downloadNowText}
                   </h2>
                   <div className="w-screen mt-4 flex sm:flex-row justify-center lg:justify-start gap-6">
-                    <FbpixelButton
+                    <FbPixelButton
                       contentName="Google Play Link"
                       value={app.googlePlayLink}
                       id="googlePlayLink"
@@ -67,7 +67,7 @@ export default function Home() {
                           height={100}
                         />
                       </Link>
-                    </FbpixelButton>
+                    </FbPixelButton>
 
                     {/* <Link href={app.appStoreLink} target="_blank">
                       <Image
@@ -150,12 +150,18 @@ export default function Home() {
                 <p className="text-left text-sm text-textSecondary font-medium">
                   {app.emailText}
                 </p>
-                <a
-                  href={`mailto:${app.emailLink}`}
-                  className="font-medium text-md sm:text-lg"
+                <FbPixelButton
+                  contentName="Contact Email"
+                  value={app.emailLink}
+                  id="contactEmail"
                 >
-                  {app.emailLink}
-                </a>
+                  <a
+                    href={`mailto:${app.emailLink}`}
+                    className="font-medium text-md sm:text-lg"
+                  >
+                    {app.emailLink}
+                  </a>
+                </FbPixelButton>
               </div>
             </div>
           </section>

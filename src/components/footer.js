@@ -4,7 +4,7 @@ import Image from "next/image";
 import { FacebookIcon, InstagramIcon, TiktokIcon, YoutubeIcon } from "./icons";
 import { Paragraph } from "./ui/paragraph";
 import app from "@/config";
-import { FbpixelButton } from "./fbpixel-button";
+import { FbPixelButton } from "./fbpixel-button";
 
 function FooterSection() {
   return (
@@ -24,7 +24,7 @@ function FooterSection() {
             </Link>
             <ul className="flex gap-4">
               <li>
-                <FbpixelButton
+                <FbPixelButton
                   contentName="Footer Facebook Link"
                   value={app.facebookLink}
                   id="facebookLink"
@@ -37,24 +37,31 @@ function FooterSection() {
                       alt="faceboook link"
                     />
                   </Link>
-                </FbpixelButton>
+                </FbPixelButton>
               </li>
               <li>
-                <Link href={app.instagramLink} target="_blank">
-                  <button>
+                <FbPixelButton
+                  contentName="Footer Instagram Link"
+                  value={app.instagramLink}
+                  id="instagramLink"
+                >
+                  <Link href={app.instagramLink} target="_blank">
                     <Image
                       width={24}
                       height={24}
                       src="/instagram.png"
                       alt="instagram link"
                     />
-                    <span className="sr-only">Footer Instagram Link</span>
-                  </button>
-                </Link>
+                  </Link>
+                </FbPixelButton>
               </li>
               <li>
-                <Link href={app.tiktokLink} target="_blank">
-                  <button>
+                <FbPixelButton
+                  contentName="Footer Tiktok Link"
+                  value={app.tiktokLink}
+                  id="tiktokLink"
+                >
+                  <Link href={app.tiktokLink} target="_blank">
                     <Image
                       width={24}
                       height={24}
@@ -62,22 +69,24 @@ function FooterSection() {
                       src="/tiktok.png"
                       alt="tiktok link"
                     />
-                    <span className="sr-only">Footer Tiktok Link</span>
-                  </button>
-                </Link>
+                  </Link>
+                </FbPixelButton>
               </li>
               <li>
-                <Link href={app.youtubeLink} target="_blank">
-                  <button>
+                <FbPixelButton
+                  contentName="Footer Youtube Link"
+                  value={app.youtubeLink}
+                  id="youtubeLink"
+                >
+                  <Link href={app.youtubeLink} target="_blank">
                     <Image
                       width={24}
                       height={24}
                       src="/youtube.png"
                       alt="youtube link"
                     />
-                    <span className="sr-only">Footer Youtube Link</span>
-                  </button>
-                </Link>
+                  </Link>
+                </FbPixelButton>
               </li>
             </ul>
           </div>
