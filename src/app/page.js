@@ -11,7 +11,6 @@ import Link from "next/link";
 import { FbpixelButton } from "@/components/fbpixel-button";
 
 export default function Home() {
-  
   return (
     <>
       <main className="w-screen">
@@ -49,7 +48,26 @@ export default function Home() {
                     {app.downloadNowText}
                   </h2>
                   <div className="w-screen mt-4 flex sm:flex-row justify-center lg:justify-start gap-6">
-                    <FbpixelButton />
+                    <FbpixelButton
+                      contentName="Google Play Link"
+                      value={app.googlePlayLink}
+                      id="googlePlayLink"
+                    >
+                      <Link
+                        href={app.googlePlayLink}
+                        target="_blank"
+                        name="Google Play Link"
+                        title="Link to Google Play Store"
+                      >
+                        <Image
+                          src="/google-play-badge.webp"
+                          alt="Google play badge"
+                          className="object-contain"
+                          width={150}
+                          height={100}
+                        />
+                      </Link>
+                    </FbpixelButton>
 
                     {/* <Link href={app.appStoreLink} target="_blank">
                       <Image

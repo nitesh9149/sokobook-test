@@ -4,6 +4,7 @@ import Image from "next/image";
 import { FacebookIcon, InstagramIcon, TiktokIcon, YoutubeIcon } from "./icons";
 import { Paragraph } from "./ui/paragraph";
 import app from "@/config";
+import { FbpixelButton } from "./fbpixel-button";
 
 function FooterSection() {
   return (
@@ -23,17 +24,20 @@ function FooterSection() {
             </Link>
             <ul className="flex gap-4">
               <li>
-                <Link href={app.facebookLink} target="_blank">
-                  <button>
+                <FbpixelButton
+                  contentName="Footer Facebook Link"
+                  value={app.facebookLink}
+                  id="facebookLink"
+                >
+                  <Link href={app.facebookLink} target="_blank">
                     <Image
                       width={24}
                       height={24}
                       src="/facebook.png"
                       alt="faceboook link"
                     />
-                    <span className="sr-only">Footer Facebook Link</span>
-                  </button>
-                </Link>
+                  </Link>
+                </FbpixelButton>
               </li>
               <li>
                 <Link href={app.instagramLink} target="_blank">

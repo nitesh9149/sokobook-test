@@ -1,32 +1,16 @@
 "use client";
-import app from "@/config";
-import Image from "next/image";
-import Link from "next/link";
 
-function FbpixelButton() {
+function FbpixelButton({ children, contentName, value, id }) {
   function handleClick() {
-    fbq("track", "googlePlayLink", {
-      content_name: "Really Fast Running Shoes",
-      value: app.googlePlayLink,
+    fbq("track", id, {
+      content_name: contentName,
+      value: value,
     });
   }
   return (
-    <button onClick={handleClick} id="googlePlayLink" className="w-fit h-auto">
-      <Link
-        href={app.googlePlayLink}
-        target="_blank"
-        name="Google Play Link"
-        title="Link to Google Play Store"
-      >
-        <Image
-          src="/google-play-badge.webp"
-          alt="Google play badge"
-          className="object-contain"
-          width={150}
-          height={100}
-        />
-      </Link>
-      <span className="sr-only">Google Play Button</span>
+    <button onClick={handleClick} id={id} className="w-fit h-auto">
+      {children}
+      <span className="sr-only">{contentName}</span>
     </button>
   );
 }
